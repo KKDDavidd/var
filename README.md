@@ -12,6 +12,7 @@
     Szabó Ágoston - sz
         + Történet
         + Base CSS
+        + Figma
     Sulyok Csanád - csd
         + Vár jelene
         + Képek
