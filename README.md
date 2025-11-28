@@ -5,7 +5,7 @@
         + Elétherőség / Kapcsolat
     Baráth Barnabás - b
         + Programok
-        +made by
+        + Made by
     Kovács Dávid  - k
         + Jegyvásárlás
         + AI Generálás
