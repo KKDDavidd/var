@@ -1,19 +1,16 @@
 # Feladatok
 ## Résztvevők:
-    Heizler Zalán-h
-    Baráth Barnabás-b
-    Kovács Dávid-k
-    Szabó Ágoston-sz
-    Sulyok Csanád- csd
-## Egyéb Feladatok
-    főoldal-h
-    elérhetőség,kapcsolat-h
-    vár jelene-csd
-    képek-csd
-    programok-b
-    történet-sz
-    base css-sz
-    jegyvásárlás-k
-    ai assistant-k
-    git-k
-    git review-k
+    Heizler Zalán - h
+        + Főoldal
+        + Elétherőség / Kapcsolat
+    Baráth Barnabás - b
+        + Programok
+    Kovács Dávid  - k
+        + Jegyvásárlás
+        + AI Generálás
+    Szabó Ágoston - sz
+        + Történet
+        + Base CSS
+    Sulyok Csanád - csd
+        + Vár jelene
+        + Képek
