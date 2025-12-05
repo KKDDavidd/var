@@ -1,4 +1,7 @@
-label{
-    display: block;
-    margin: 0.5rem 0;
+label {
+    margin-left: auto;
+}
+
+input {
+    margin: auto;
 }
