@@ -13,7 +13,8 @@
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -26,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Főoldal</a>
+                        <a class="nav-link " href="fooldal.html">Főoldal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Története</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Képek a jelenből</a>
+                        <a class="nav-link" href="Jelenleg.html">Képek a jelenből</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Jegyek</a>
+                        <a class="nav-link active" aria-current="page" href="jegyek.html">Jegyek</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="elerhetoseg.html">Elérhetőség</a>
@@ -50,22 +51,38 @@
             </div>
         </div>
     </nav>
-    <h1>Jegyvásárlás</h1>
-    <h2>Személyes Információk</h2>
-    <form action="post">
+    <form action="post" class="text-center">
+        <h1>Jegyvásárlás</h1>
+        <h2>Személyes Információk</h2>
         <fieldset>
-            <label for="teljnev">Teljes neve:<input id="teljnev" name="teljnev" type="text" required></label>
-            <label for="email">Email címe:<input id="email" name="email" type="email" required></label>
-            <label for="tel">Telefonszáma:<input id="tel" name="tel" type="tel" required maxlength="12"></label>
-          </fieldset>
-          <h2>Személyes Információk</h2>
-          <fieldset>
-            <label for="csaladi">Családi jegy (2 felnőtt,3 gyerek)<input id="csaladi" name="csaladi" type="number" min="0" max="1"></label>
-            <label for="gyerek">Gyerek jegy (0-6 éves kor)<input id="gyerek" name="gyerek" type="number" min="0" max="10"></label>
-            <label for="felnott">Felnőtt jegy<input id="felnott" name="felnott" type="number" min="0" max="10"></label>
-            <label for="diakny">Diák / Nyugdíjas jegy<input id="diakny" name="diakny" type="number" min="0" max="10"></label>
-            <label for="datum">Látogatás dátuma<input type="date" id="datum" min="2025-12-05" max="2026-01-31"></label>
-          </fieldset>
+            <label for="teljnev">Teljes neve:<br><input id="teljnev" name="teljnev" type="text" required>
+            </label>
+            <label for="email">Email címe:<br><input id="email" name="email" type="email" required>
+            </label>
+            <label for="tel">Telefonszáma:<br><input id="tel" name="tel" type="tel" required maxlength="12" minlength="10">
+            </label>
+        </fieldset>
+        <h2>Személyes Információk</h2>
+        <fieldset>
+            <label for="csaladi" title="2 felnőtt, 3 gyerek">Családi jegy (6500 Ft)<br><input id="csaladi" name="csaladi" type="number"
+                    value="0" min="0" max="1" onchange="jegyarak()"></label>
+            <label for="gyerek">Gyerek jegy (0-6 éves kor)<br><input id="gyerek" name="gyerek" type="number" value="0" min="0"
+                    max="10" onchange="jegyarak()"></label>
+            <label for="felnott">Felnőtt jegy<br><input id="felnott" name="felnott" type="number" value="0" min="0"
+                    max="10" onchange="jegyarak()"></label>
+            <label for="diakny">Diák / Nyugdíjas jegy<br><input id="diakny" name="diakny" type="number" value="0" min="0"
+                    max="10" onchange="jegyarak()"></label>
+            <label for="datum">Látogatás dátuma<br><input type="date" id="datum" value="0" min="2025-12-05"
+                    max="2026-01-31" onchange="jegyarak()"></label>
+        </fieldset>
+        <fieldset>
+            <br>
+            <p>Fizetendő: <b><span id="ar">0</span></b> Ft</p>
+            <label for="adatkezeles"><input type="checkbox" id="adatkezeles" required>Elfogadom az <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Adatkezelési Nyilatkozatot</a></label>
+            <button id="bekuldes">Beküldés</button>
+        </fieldset>
     </form>
+    
 </body>
+
 </html>
