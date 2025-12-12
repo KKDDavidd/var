@@ -13,3 +13,8 @@ p{
 h2{
     text-align: left;
 }
+.card-img-top {
+    width: 100%;
+    height: 200px; /* fix magasság */
+    object-fit: cover; /* a kép arányos, kitöltve */
+  }
