@@ -65,15 +65,15 @@
         <h2>Jegyek</h2>
         <fieldset>
             <label for="csaladi">Családi jegy (2 felnőtt,3 gyerek)<br><input id="csaladi" name="csaladi" type="number"
-                    min="0" max="1"></label>
+                    min="0" max="1" onchange="jegyarak()"></label>
             <label for="gyerek">Gyerek jegy (0-6 éves kor)<br><input id="gyerek" name="gyerek" type="number" min="0"
-                    max="10"></label>
+                    max="10" onchange="jegyarak()"></label>
             <label for="felnott">Felnőtt jegy<br><input id="felnott" name="felnott" type="number" min="0"
-                    max="10"></label>
+                    max="10" onchange="jegyarak()"></label>
             <label for="diakny">Diák / Nyugdíjas jegy<br><input id="diakny" name="diakny" type="number" min="0"
-                    max="10"></label>
+                    max="10" onchange="jegyarak()"></label>
             <label for="datum">Látogatás dátuma<br><input type="date" id="datum" min="2025-12-05"
-                    max="2026-01-31"></label>
+                    max="2026-01-31" onchange="jegyarak()"></label>
         </fieldset>
         <fieldset>
             <label for="adatkezeles"><input type="checkbox" id="adatkezeles" required>Elfogadom az <a

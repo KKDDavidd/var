@@ -34,3 +34,8 @@ const playPauseBtn = document.getElementById('playPauseBtn');
 
     playPauseBtn.addEventListener('click', togglePlayPause);
     audio.addEventListener('timeupdate', updateProgress);
+
+function jegyarak() {
+  let ar = 0;
+  print("Egg");
+}
