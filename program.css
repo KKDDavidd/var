@@ -1,0 +1,15 @@
+#herokep{
+display: block;
+margin: 0 auto;
+width: 700px;
+height: auto;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: left;
+}
+h2{
+    text-align: left;
+}
