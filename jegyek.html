@@ -64,13 +64,13 @@
         </fieldset>
         <h2>Személyes Információk</h2>
         <fieldset>
-            <label for="csaladi" title="2 felnőtt, 3 gyerek">Családi jegy (6500 Ft)<br><input id="csaladi" name="csaladi" type="number"
+            <label for="csaladi" title="2 felnőtt, 3 gyerek"><u>Családi jegy (6500 Ft)</u><br><input id="csaladi" name="csaladi" type="number"
                     value="0" min="0" max="1" onchange="jegyarak()"></label>
-            <label for="gyerek">Gyerek jegy (0-6 éves kor)<br><input id="gyerek" name="gyerek" type="number" value="0" min="0"
+            <label for="gyerek" title="0-6 éves kor"><u>Gyerek jegy (500 Ft)</u><br><input id="gyerek" name="gyerek" type="number" value="0" min="0"
                     max="10" onchange="jegyarak()"></label>
-            <label for="felnott">Felnőtt jegy<br><input id="felnott" name="felnott" type="number" value="0" min="0"
+            <label for="felnott">Felnőtt jegy (3000 Ft)<br><input id="felnott" name="felnott" type="number" value="0" min="0"
                     max="10" onchange="jegyarak()"></label>
-            <label for="diakny">Diák / Nyugdíjas jegy<br><input id="diakny" name="diakny" type="number" value="0" min="0"
+            <label for="diakny" title="Diákigazolvány vagy személyi felmutatása kötelező!"><u>Diák / Nyugdíjas jegy (1500 Ft)</u><br><input id="diakny" name="diakny" type="number" value="0" min="0"
                     max="10" onchange="jegyarak()"></label>
             <label for="datum">Látogatás dátuma<br><input type="date" id="datum" value="0" min="2025-12-05"
                     max="2026-01-31" onchange="jegyarak()"></label>
@@ -82,7 +82,7 @@
             <button id="bekuldes">Beküldés</button>
         </fieldset>
     </form>
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
