@@ -36,6 +36,15 @@ const playPauseBtn = document.getElementById('playPauseBtn');
     audio.addEventListener('timeupdate', updateProgress);
 
 function jegyarak() {
-  let ar = 0;
-  print("Egg");
+
+  let csaladi = document.getElementById("csaladi").value;
+  let csar = 6500*csaladi
+  let gyerek = document.getElementById("gyerek").value;
+  let gyar = 500*gyerek
+  let felnott = document.getElementById("felnott").value;
+  let far = 3000*felnott
+  let diakny = document.getElementById("diakny").value;
+  let dar = 1500*diakny
+  let osszesen = csar + gyar + far + dar
+  document.getElementById("ar").textContent = osszesen
 }
