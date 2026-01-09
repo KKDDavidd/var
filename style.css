@@ -10,7 +10,7 @@ body {
     border-width: 40%;
     margin: 3%;
     color: rgba(0, 0, 0, 1);
-    height: 300px;
+    
 }
 .container-fluid {
     width: 45%;
@@ -34,6 +34,7 @@ body {
 
 .card-text {
     text-align: right;
+    margin-left: 5%;
 }
 
 .card-title{
