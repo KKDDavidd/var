@@ -40,3 +40,7 @@ body {
 .card-title{
     text-align: center;
 }
+
+.card-header {
+    background-color: rgb(141, 140, 140);
+}
