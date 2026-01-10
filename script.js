@@ -6,10 +6,7 @@ const playPauseBtn = document.getElementById('playPauseBtn');
     let isPlaying = false;
     let osszesprob=localStorage.getItem("price");
     let osszesen=0;
-    if(osszesprob!=0){
-      let osszesen=localStorage.getItem("price", osszesen);
-      document.getElementById("ar").textContent = osszesen;
-    }
+    
     function togglePlayPause() {
       if (isPlaying) {
         audio.pause();
