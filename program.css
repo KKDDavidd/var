@@ -24,4 +24,28 @@ h2{
   .checked {
     color: orange;
   }
+  .rating{
+    text-align: center;
+    
+  }
+  #csillag{
+    text-align: center;
+  }
+  .fa{
+    padding-right: 1vw;
+  }
+  .jobboldali{
+    padding-left: 10vw;
+    
+  }
+  .ikon{
+    display: flex;
+    gap: 8vw;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    color: black;
+  }
+
   
