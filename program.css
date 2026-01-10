@@ -18,5 +18,34 @@ h2{
     height: 200px; /* fix magasság */
     object-fit: cover; /* a kép arányos, kitöltve */
   }
+  .container{
+
+  }
+  .checked {
+    color: orange;
+  }
+  .rating{
+    text-align: center;
+    
+  }
+  #csillag{
+    text-align: center;
+  }
+  .fa{
+    padding-right: 1vw;
+  }
+  .jobboldali{
+    padding-left: 10vw;
+    
+  }
+  .ikon{
+    display: flex;
+    gap: 8vw;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    color: black;
+  }
 
   
